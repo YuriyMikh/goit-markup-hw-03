@@ -36,6 +36,27 @@
   overflow: hidden;
 }
 
+/*Сброс стилей*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
 /*Глобальный стиль для body*/
 
 body {
@@ -63,7 +84,28 @@ body {
   text-decoration: none;
 }
 
-/* Лого в шапке и в футере */
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 2px solid red;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/* ------------HEADER------------ */
+
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ececec;
+}
+
+/* ------------ЛОГО в шапке и в футере------------ */
 
 .logo-start {
   color: var(--accent-blue-color);
@@ -131,6 +173,8 @@ body {
 .hero {
   background-color: var(--hero-footer-background-color);
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -141,6 +185,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin-bottom: 30px;
 }
 
 .hero-button {
@@ -179,6 +224,11 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-color);
+  margin-bottom: 50px;
+}
+
+.section-do-img {
+  margin-bottom: 30px;
 }
 
 .members-section-title {
@@ -188,10 +238,15 @@ body {
   /* text-align: center; */
   letter-spacing: 0.03em;
   color: var(--title-color);
+  margin-bottom: 10px;
 }
 
 .section-team {
   background-color: #f5f4fa;
+}
+
+.section-team-img {
+  margin-bottom: 30px;
 }
 
 /* Футер */
