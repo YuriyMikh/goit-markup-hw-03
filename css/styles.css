@@ -97,12 +97,43 @@ body {
   padding-bottom: 94px;
 }
 
-/* ------------HEADER------------ */
+/* -----------------------HEADER--------------------- */
 
 .header {
   padding-top: 24px;
   padding-bottom: 25px;
   border-bottom: 1px solid #ececec;
+}
+
+.nav-main {
+  display: flex;
+  align-items: center;
+  margin-top: 24px;
+  margin-bottom: 25px;
+}
+
+.header-nav-list {
+  display: flex;
+  margin-left: 93px;
+}
+
+.header-contacts-list {
+  display: flex;
+  margin-left: auto;
+}
+
+.header-contacts-item {
+  display: flex;
+}
+
+/*Даем отступ для соседа слева. Для первого li отступа не будет, так как первый li не имеет соседа слева*/
+.header-contacts-item + .header-contacts-item {
+  margin-left: 50px;
+}
+
+/* margin 50px всем кроме последнего*/
+.header-nav-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 /* ------------ЛОГО в шапке и в футере------------ */
@@ -134,7 +165,7 @@ body {
   letter-spacing: 0.03em;
 }
 
-/*Навигация в хедере*/
+/* ----------------Навигация в хедере---------------- */
 
 .nav-link {
   color: var(--title-color);
@@ -142,6 +173,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  display: block;
 }
 
 .nav-link:hover,
@@ -198,6 +230,9 @@ body {
   letter-spacing: 0.06em;
   background-color: var(--accent-blue-color);
   color: var(--primary-white-color);
+  min-width: 200px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
 .hero-button:hover,
@@ -209,12 +244,31 @@ body {
 /*Стили в секциях*/
 /* Секции на Главной странице */
 
+.features {
+  display: flex;
+}
+
 .feature-section-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--title-color);
+  margin-bottom: 10px;
+}
+
+.features-list {
+  display: flex;
+}
+
+.features-section-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.features-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
 .section-title {
@@ -224,18 +278,30 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-color);
+}
+
+.doing-title {
   margin-bottom: 50px;
 }
 
-.section-do-img {
-  margin-bottom: 30px;
+.doing-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.doing-items:not(:last-child) {
+  margin-right: 30px;
+}
+
+.section-doing-img {
+  display: block;
 }
 
 .members-section-title {
   font-weight: 500;
   font-size: 16px;
   line-height: calc(19 / 16);
-  /* text-align: center; */
+  text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-color);
   margin-bottom: 10px;
@@ -245,8 +311,25 @@ body {
   background-color: #f5f4fa;
 }
 
+.team-title {
+  margin-bottom: 50px;
+}
+
+.team-list {
+  display: flex;
+}
+
+.team-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .section-team-img {
   margin-bottom: 30px;
+}
+
+.team-text {
+  text-align: center;
+  display: block;
 }
 
 /* Футер */
@@ -254,6 +337,16 @@ body {
 .section-footer {
   background-color: var(--hero-footer-background-color);
   color: var(--primary-white-color);
+}
+
+.footer-main {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-logo {
+  margin-bottom: 20px;
+  display: block;
 }
 
 .footer-address {
@@ -269,6 +362,10 @@ body {
 .footer-contacts:hover,
 .footer-contacts:focus {
   color: var(--accent-blue-color);
+}
+
+.footer-list:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 /*Секция на странице Портфолио*/
