@@ -100,8 +100,6 @@ body {
 /* -----------------------HEADER--------------------- */
 
 .header {
-  padding-top: 24px;
-  padding-bottom: 25px;
   border-bottom: 1px solid #ececec;
 }
 
@@ -245,6 +243,10 @@ body {
 /*Стили в секциях*/
 /* Секции на Главной странице */
 
+.no-padding {
+  padding-bottom: 0px;
+}
+
 .features {
   display: flex;
 }
@@ -260,6 +262,10 @@ body {
 
 .features-list {
   display: flex;
+}
+
+.features-section-item {
+  width: 270px;
 }
 
 .features-section-item:not(:last-child) {
@@ -320,6 +326,11 @@ body {
   display: flex;
 }
 
+.team-list-item {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .team-item {
   background-color: #ffffff;
 }
@@ -329,13 +340,12 @@ body {
 }
 
 .section-team-img {
-  margin-bottom: 30px;
+  display: block;
 }
 
 .team-text {
   text-align: center;
   display: block;
-  margin-bottom: 30px;
 }
 
 /* Футер */
@@ -343,9 +353,6 @@ body {
 .section-footer {
   background-color: var(--hero-footer-background-color);
   color: var(--primary-white-color);
-}
-
-.footer-main {
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -357,10 +364,16 @@ body {
 
 .footer-address {
   color: var(--primary-white-color);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
 .footer-contacts {
   color: var(--footer-contacts-color);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
 .footer-address:hover,
@@ -390,6 +403,7 @@ body {
   font-size: 16px;
   line-height: 1.87;
   color: var(--text-color);
+  display: block;
   /* margin-left: 24px;
   margin-bottom: 20px; */
 }
