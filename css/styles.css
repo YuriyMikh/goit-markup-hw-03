@@ -412,7 +412,7 @@ body {
 
 .portfolio-button-list {
   display: flex;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
   justify-content: center;
 }
 
@@ -471,7 +471,6 @@ body {
   margin-right: 30px;
   margin-bottom: 30px;
   width: 370px;
-  border-bottom: 1px solid #eeeeee;
 }
 
 .project-item:nth-child(3n) {
@@ -488,4 +487,7 @@ body {
 
 .project-list-item {
   padding: 20px 24px;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
 }
